@@ -1,0 +1,10 @@
+{
+"$schema": "node_modules/wrangler/config-schema.json",
+"name": "pman-emdash-blog",
+"main": "./src/worker.ts",
+"compatibility_date": "2026-02-24",
+"compatibility_flags": ["nodejs_compat"],
+"d1_databases": [{ "binding": "DB", "database_name": "pman-emdash-blog","database_id": "0104fdc1-4930-4571-8a5b-65252075cc68" }],
+"r2_buckets": [{ "binding": "MEDIA", "bucket_name": "pman-emdash-media","preview_bucket_name": "pman-emdash-media" }],
+"triggers": { "crons": ["* * * * *"] }
+}
